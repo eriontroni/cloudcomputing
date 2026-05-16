@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(update-config)",
+      "Bash(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\backend\\\\config\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\backend\\\\routes\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\backend\\\\controllers\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\backend\\\\middleware\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\backend\\\\validators\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\frontend\\\\src\\\\pages\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\frontend\\\\src\\\\components\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\frontend\\\\src\\\\services\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\frontend\\\\src\\\\hooks\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\frontend\\\\src\\\\context\",\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\database\")",
+      "Bash(Write-Host \"Folders created\")",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\" -Recurse -File | Where-Object { $_.FullName -notmatch \"node_modules\" } | Select-Object -ExpandProperty FullName | ForEach-Object { $_.Replace\\(\"C:\\\\Users\\\\Lenovo\\\\source\\\\repos\\\\CloudComputing\\\\\",\"\"\\) } | Sort-Object)",
+      "PowerShell(az --version 2>&1 | Select-Object -First 3)"
+    ]
+  }
+}
